@@ -1,0 +1,22 @@
+{
+    "name": "ksfraser/ksf-wallet-core",
+    "description": "Wallet business logic (framework-agnostic, extracted from TeraWallet/WooCommerce)",
+    "type": "library",
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ksf\\Wallet\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
