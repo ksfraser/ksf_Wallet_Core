@@ -1,5 +1,5 @@
 <?php
-namespace Ksfraser\Wallet;
+namespace KsfraserWallet;
 
 /**
  * Interface for wallet data storage

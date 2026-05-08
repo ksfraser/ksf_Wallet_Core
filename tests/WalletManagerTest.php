@@ -1,5 +1,5 @@
 <?php
-namespace Ksfraser\Wallet\Tests;
+namespace Ksfraser\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Ksf\Wallet\WalletManager;
