@@ -234,3 +234,18 @@ To make this a drop-in replacement for TeraWallet:
 - Same meta keys: `_woo_wallet_balance`
 
 **Note**: This is a nice-to-have, NOT a must-have. Focus on FA integration first.
+
+## Development Workflow
+
+All development is done in the **devel tree** (`~/Documents/ksf_Wallet_Core`).
+
+### Workflow Steps
+1. **Develop** in this repo (feature branches preferred)
+2. **Test**: run repo-appropriate tests
+3. **Lint**: `php -l` on modified PHP files (no syntax errors)
+4. **Commit** and **Push** branch to GitHub
+5. **Merge** to `master` when ready
+6. **Push** `master` to GitHub
+
+*No UAT bind point in `~/ksf_Infrastructure/fa_modules/ksf_Wallet_Core` — this repo is consumed via Composer path repos or other means.*
+
