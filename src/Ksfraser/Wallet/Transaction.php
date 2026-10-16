@@ -1,5 +1,5 @@
 <?php
-namespace KsfraserWallet;
+namespace Ksfraser\Wallet;
 
 /**
  * Wallet Transaction Value Object

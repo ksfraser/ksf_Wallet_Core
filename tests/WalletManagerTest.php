@@ -2,14 +2,13 @@
 namespace Ksfraser\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Ksf\Wallet\WalletManager;
-use Ksf\Wallet\Transaction;
-use Ksf\Wallet\WalletRepositoryInterface;
+use Ksfraser\Wallet\WalletManager;
+use Ksfraser\Wallet\Transaction;
 
 /**
  * Mock Repository for testing
  */
-class MockWalletRepository implements WalletRepositoryInterface {
+class MockWalletRepository implements \Ksfraser\Wallet\WalletRepositoryInterface {
     private $balances = [];
     private $transactions = [];
     private $locked = [];

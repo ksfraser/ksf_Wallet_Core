@@ -1,5 +1,5 @@
 <?php
-namespace KsfraserWallet;
+namespace Ksfraser\Wallet;
 
 /**
  * Framework-agnostic Wallet Manager
