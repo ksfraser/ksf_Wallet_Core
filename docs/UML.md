@@ -58,7 +58,7 @@ WalletManager -> WalletRepository: isLocked(userId)
 WalletRepository --> WalletManager: false
 WalletManager -> WalletRepository: executeInTransaction(callback)
 WalletRepository -> WalletRepository: BEGIN TRANSACTION
-WalletRepository -> WalletRepository: insert into fa_wallet_transactions
+WalletRepository -> WalletRepository: insert into ksf_wallet_transactions
 WalletRepository -> WalletRepository: COMMIT
 WalletRepository --> WalletManager: transaction_id
 WalletManager --> User: transaction_id
@@ -100,7 +100,7 @@ WalletManager --> User: {debit_id, credit_id}
 ## Database Schema (FA Tables)
 
 ```
-fa_wallet_transactions
+ksf_wallet_transactions
 ----------------------
 - id (INT, PK, AUTO_INCREMENT)
 - user_id (INT, NOT NULL)
@@ -116,7 +116,7 @@ fa_wallet_transactions
 - created_by (INT, NOT NULL)
 - deleted (TINYINT, DEFAULT 0)
 
-fa_wallet_balances (cache)
+ksf_wallet_balances (cache)
 ---------------------------
 - user_id (INT, PK)
 - balance (DECIMAL(10,2), DEFAULT 0)

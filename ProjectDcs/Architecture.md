@@ -259,7 +259,7 @@ class Transaction {
 ### 4.2 Database Table Structure (FA Implementation)
 
 ```sql
-CREATE TABLE fa_wallet_transactions (
+CREATE TABLE ksf_wallet_transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     type ENUM('credit', 'debit') NOT NULL,
@@ -274,7 +274,7 @@ CREATE TABLE fa_wallet_transactions (
     INDEX idx_type (type)
 );
 
-CREATE TABLE fa_wallet_balances (
+CREATE TABLE ksf_wallet_balances (
     user_id INT PRIMARY KEY,
     is_locked BOOLEAN DEFAULT FALSE,
     updated_at DATETIME

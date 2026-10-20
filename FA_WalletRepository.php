@@ -10,10 +10,10 @@ class FA_WalletRepository implements WalletRepositoryInterface {
     private $db;
     
     /** @var string */
-    private $transactionsTable = 'fa_wallet_transactions';
+    private $transactionsTable = 'ksf_wallet_transactions';
     
     /** @var string */
-    private $balanceTable = 'fa_wallet_balances';
+    private $balanceTable = 'ksf_wallet_balances';
     
     /**
      * @param \ADV_Query $db FA database connection wrapper
